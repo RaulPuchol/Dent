@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Raul Puchol" content="width=device-width, initial-scale=1.0">
+    <title>Dent</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="registre">
+    <section id="grid">
+        <section id="logocabezera">
+            <header>
+                <div class="cabezera">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo1.webp" alt="logo"></a>
+                        <div>
+                            <h1>Dent</h1>
+                            <p>Social media!</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="login.html">Login</a>
+                            
+                        </nav>
+                        <div class="profile">
+                            <div class="profilebackground"><a> ProfileName <img src="img/circunferenciadiente.png" alt="profilepic"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section id="register">
+            <div class="registerblock">
+                <h2>Create account on <i>Dent</i>!</h2>
+                <input type="text" id="user" placeholder="User" required/>
+                <input type="email" id="email" placeholder="Email" required/>
+                <input type="password" id="password" placeholder="Password" required/>
+                <button type="submit"> Register </button>
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+            <div class="registerblock2">
+                <h2>Your i<i>dent</i>ity on <i>Dent</i>!</h2>
+                <img id="preview-image" src="img/circunferenciadiente.png" alt="icon">
+
+                    <button><label for="picture">Select image</label></button>
+                <input type="file" id="picture" accept="image/*" onchange="previewImage(event)">
+                <p>Select your profile picture!</p>
+                <p><i>Or maybe do it later...</i></p>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footerleft">
+                <img src="img/logo1.webp" alt="logo">
+                <p>Copyright &#169; 2023​ <strong>Dent</strong> | All rights reserved.</p>
+            </div>
+            <div class="footerright">
+                <p><a href="#Privacy">Privacy Policy</a> | <a href="#Terms">Terms and Conditions</a></p>
+            </div>
+        </section>
+    </section>
+</body>
+<script>
+    function previewImage(event) {
+        // Get the file input element
+        var fileInput = event.target;
+    
+        // Get the selected file
+        var file = fileInput.files[0];
+    
+        // Get the image element
+        var imgElement = document.getElementById('preview-image');
+    
+        // Create a FileReader
+        var reader = new FileReader();
+    
+        // Set up the FileReader to update the image source when the file is read
+        reader.onload = function (e) {
+            imgElement.src = e.target.result;
+        };
+    
+        // Read the selected file as a data URL
+        reader.readAsDataURL(file);
+    }
+</script>
+</html>

@@ -1,0 +1,484 @@
+* {
+  margin: 0px;
+  font-family: 'Fira Sans';
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: 15% 75% 10%;
+  height: 100vh;
+  width: 100vw;
+}
+
+#gridindex {
+  display: grid;
+  grid-template-rows: 15% 75% 10%;
+  grid-template-columns: 18% auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+body{
+  overflow: hidden;
+}
+
+/*-- Cabezera --*/
+
+.cabezera {
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 25px 5px;
+  background-color: white;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  gap: 60px;
+}
+
+.links nav a{
+  margin: 0px 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.links nav a:hover {
+  border-bottom: 2px solid rgb(255 87 110);
+}
+
+.links nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#index .links nav a:nth-child(1){
+  color:rgb(255 87 110);
+  border-bottom: 2px solid rgb(255 87 110);
+}
+
+#login .links nav a:nth-child(2){
+  color:rgb(255 87 110);
+  border-bottom: 2px solid rgb(255 87 110);
+}
+
+.profile {
+  background-color: rgb(255 87 110);
+  padding: 10px;
+  border-radius: 1000px;
+  border: solid black 2px;
+}
+
+.profilebackground a{
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+.profile img {
+  width: 65px;
+}
+
+.cabezera h1{
+  font-size: 3.5rem;
+  color:rgb(255 87 110);
+}
+
+/*-- Cabezera index --*/
+
+#linkscabezera {
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  padding: 6px 25px 5px;
+  background-color: white;
+  height: 91.5px;
+}
+
+/*-- Login --*/
+
+#login, #registre, #index {
+  background-image: url(img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginblock {
+  border: black solid 2px;
+  width: 450px;
+  height: 450px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.loginblock input{
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.loginblock h2 {
+  font-size: 2.5rem;
+}
+
+.loginblock h2 i {
+  color: rgb(255 87 110);
+}
+
+.loginblock button {
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+.loginblock button:hover {
+  scale: 110%;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+
+
+/*-- Register --*/
+
+#register {
+  background-image: url(img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerblock {
+  border: black solid 2px;
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  background-color: white;
+}
+
+.registerblock2 {
+  border: black solid 2px;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: white;
+}
+
+.registerblock2 img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 1000px;
+}
+
+.registerblock2 h2 {
+  margin-top: 50px;
+}
+
+.registerblock2 h2 i {
+  color: rgb(255 87 110);
+}
+
+.registerblock input{
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.registerblock h2 {
+  font-size: 2.5rem;
+}
+
+.registerblock h2 i {
+  color: rgb(255 87 110);
+}
+
+.registerblock button {
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+.registerblock button:hover {
+  transition: 0.3s;
+  scale: 110%;
+  box-shadow: 3px 3px rgb(169 243 244);
+}
+
+.registerblock2 input {
+  display: none;
+}
+
+.registerblock2 button{
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+.registerblock2 button:hover {
+  transition: 0.3s;
+  scale: 110%;
+  box-shadow: 3px 3px rgb(169 243 244);
+}
+
+.registerblock2 p i {
+  font-size: 0.8rem;
+}
+
+
+/*-- perfil --*/
+#perfil {
+  background-image: url(img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfilblock {
+  border: black solid 2px;
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  background-color: white;
+}
+
+.perfilblock2 {
+  border: black solid 2px;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: white;
+}
+
+.perfilblock2 img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 1000px;
+}
+
+.perfilblock2 h2 {
+  margin-top: 50px;
+}
+
+.perfilblock2 h2 i {
+  color: rgb(255 87 110);
+}
+
+.perfilblock input{
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.perfilblock h2 {
+  font-size: 2.5rem;
+}
+
+.perfilblock h2 i {
+  color: rgb(255 87 110);
+}
+
+.perfilblock button {
+  width: 300px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+.perfilblock button:hover {
+  transition: 0.3s;
+  scale: 110%;
+  box-shadow: 3px 3px rgb(169 243 244);
+}
+
+.perfilblock2 input {
+  display: none;
+}
+
+.perfilblock2 button{
+  width: 75px;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.perfilblock2 button:hover {
+  transition: 0.3s;
+  scale: 110%;
+  box-shadow: 3px 3px rgb(169 243 244);
+}
+
+.perfilblock2 p i {
+  font-size: 0.8rem;
+}
+
+/*-- menuizquierda --*/
+
+#menuizquierda {
+  border-right: 2px solid rgb(255 87 110);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  justify-content: center;
+}
+
+a .menuizquierdabotones {
+  width: 180px;
+  background-color: rgb(244, 244, 244);
+  border: solid black 2px;
+  padding: 20px;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 7px 7px rgb(169 243 244);
+  transition: 0.3s;
+}
+
+a .menuizquierdabotones:hover {
+  transition: 0.3s;
+  scale: 110%;
+  box-shadow: 3px 3px rgb(169 243 244);
+}
+
+#index a {
+  text-decoration: none;
+}
+
+/*-- Footer --*/
+
+#footer {
+  background-color: rgb(169 243 244);
+  border-top: solid black 2px;
+  align-items: center;
+  display: flex;
+  color: rgb(64, 73, 155);
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+#footerindex {
+  background-color: rgb(169 243 244);
+  border-top: solid black 2px;
+  align-items: center;
+  display: flex;
+  color: rgb(64, 73, 155);
+  padding: 0px 20px;
+  justify-content: flex-end;
+}
+
+.footerleft {
+  display: flex;
+  align-items: center;
+}
+
+#footer .footerleft img{
+  width: 50px;
+  border-radius: 1000px;
+  margin-right: 10px;
+  border: solid black 2px;
+}
+
+#footer .footerleft strong {
+  color: rgb(255 87 110);
+
+}
+
+#footer .footerright a{
+  text-decoration: none;
+  color: rgb(64, 73, 155);
+}
+
+#footerindex .footerleft img{
+  width: 50px;
+  border-radius: 1000px;
+  margin-right: 10px;
+  border: solid black 2px;
+}
+
+#footerindex .footerleft strong {
+  color: rgb(255 87 110);
+
+}
+
+#footerindex .footerright a{
+  text-decoration: none;
+  color: rgb(64, 73, 155);
+}
